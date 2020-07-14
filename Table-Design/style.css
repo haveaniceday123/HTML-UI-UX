@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+}
+
+.filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+  opacity: .7;
+
+  background: rgb(228,96,163);
+  background: linear-gradient(90deg, rgba(228,96,163,1) 0%, rgba(38,38,148,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+table {
+  position: absolute;
+  z-index: 2;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-collapse: collapse;
+  border-spacing: 0;
+  border-radius: 12px 12px 0 0;
+  overflow: hidden;
+  width: 60%;
+  box-shadow: 0 5px 5px rgba(32, 32, 32, 0.3);
+  background: #fafafa;
+  text-align: center;
+}
+
+th, td {
+  padding: 12px 15px;
+}
+
+th {
+  background: #F8BBD0;
+  color: #fafafa;
+  text-transform: uppercase;
+}
+
+tr:nth-child(odd) {
+  background: #FFFFFF;
+}
